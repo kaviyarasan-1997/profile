@@ -137,7 +137,14 @@ Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ
 
    <footer class="footer mt-auto py-3 bg-dark">
       <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
+	   <df-messenger
+   logo="8229ed7d3a87dc51ef5a5.png"
+  intent="WELCOME"
+  chat-title="INFOLITE"
+  agent-id="f389f8e0-a804-41be-af72-a233ea528595"
+  language-code="en"
+   expand="true"
+></df-messenger>
       <style> 
 df-messenger { 
 --df-messenger-bot-message: #0A19AC; 
@@ -146,31 +153,19 @@ df-messenger {
 --df-messenger-font-color: #fff; 
 --df-messenger-user-message: #1187ee; } 
 </style>
+<--------php-!
       // Add scripts to wp_head()
 function child_theme_header_script() { 
   	if (is_page('Contact')){ ?>
 	     // 
-	   <df-messenger
-   logo="8229ed7d3a87dc51ef5a5.png"
-  intent="WELCOME"
-  chat-title="INFOLITE"
-  agent-id="f389f8e0-a804-41be-af72-a233ea528595"
-  language-code="en"
-   expand="true"
-></df-messenger>
+
 	<? } else { ?>
 	     //
-	   <df-messenger
-   logo="8229ed7d3a87dc51ef5a5.png"
-  intent="WELCOME"
-  chat-title="INFOLITE"
-  agent-id="f389f8e0-a804-41be-af72-a233ea528595"
-  language-code="en"
-   expand="true"
-></df-messenger>
+
 	<? }
 }
 add_action( 'wp_head' , 'child_theme_header_script' );
+	   
       <div class="container">
          <span class="text-muted"> <b>DONT FORGET FOLLOW ME </b></span>
       </div>

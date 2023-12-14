@@ -153,6 +153,15 @@ df-messenger {
 --df-messenger-font-color: #fff; 
 --df-messenger-user-message: #1187ee; } 
 </style>
+      // Add scripts to wp_head()
+function child_theme_header_script() { 
+  	if (is_page('Contact')){ ?>
+	     // Paste Dialogflow Messenger code here
+	<? } else { ?>
+	     // Paste Dialogflow Messenger code here	
+	<? }
+}
+add_action( 'wp_head' , 'child_theme_header_script' );
       <div class="container">
          <span class="text-muted"> <b>DONT FORGET FOLLOW ME </b></span>
       </div>

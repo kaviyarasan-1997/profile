@@ -145,26 +145,17 @@ Yᵒᵘ Oᶰˡʸ Lᶤᵛᵉ Oᶰᶜᵉ
   language-code="en"
    expand="true"
 ></df-messenger>
-      <style> 
-df-messenger { 
---df-messenger-bot-message: #0A19AC; 
---df-messenger-button-titlebar-color: #0A19AC; 
---df-messenger-chat-background-color: #fafafa; 
---df-messenger-font-color: #fff; 
---df-messenger-user-message: #1187ee; } 
+      <style>
+  df-messenger {
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  }
 </style>
-<--------php-!
-      // Add scripts to wp_head()
-function child_theme_header_script() { 
-  	if (is_page('Contact')){ ?>
-	     // 
-
-	<? } else { ?>
-	     //
-
-	<? }
-}
-add_action( 'wp_head' , 'child_theme_header_script' );
+created by: kaviyarasan
 	   
       <div class="container">
          <span class="text-muted"> <b>DONT FORGET FOLLOW ME </b></span>
